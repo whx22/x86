@@ -1,5 +1,9 @@
 # x86 assembly language
 
+Assembly language learning notes.
+
+Reference Book: x86 Assembly Language From Real Mode to Protected Mode --lizhong
+
 ## 1. Software Preparation
 
 ### Oracle VM VirtualBox
@@ -17,10 +21,16 @@
 1. Convert the assembly file into binary file.
 2. Generate an instruction list file.
 
-nasm command line:
+nasm compile command :
 
 ```shell
+nasm name.s -f bin -o name.bin 
+```
 
+nasm compile command with listing file :
+
+```shell
+nasm name.s -f bin -o name.bin -l name.lst
 ```
 
 ### fixvhdw64.exe (wine)
