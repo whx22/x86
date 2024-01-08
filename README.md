@@ -2,7 +2,9 @@
 
 Assembly language learning notes.
 
-Reference Book: x86 Assembly Language From Real Mode to Protected Mode --lizhong
+Reference Book: ***x86 Assembly Language From Real Mode to Protected Mode*** by lizhong
+
+Assembly language style: Intel
 
 ## 1. Software Preparation
 
@@ -35,13 +37,18 @@ nasm name.s -f bin -o name.bin -l name.lst
 
 ### fixvhdw64.exe (wine)
 
+wine Chinese messy code solution:
+
+[Chinese font are not visible in wine](https://askubuntu.com/questions/1019530/chinese-fonts-are-not-visible-in-programs-installed-in-wine)
+
 1. Write the binary file into the VHD virtual disk file.
 
 ## 2. File Description
 
-1. *.vhd : virtual hard disk file
-2. bochsrc.txt ： bochs virtual machine configuration file
-3. *.s : Posix x86 assembly language file
-4. *.asm : Windows x86 assembly language file
-5. *.bin : binary object file
-6. *.lst : instruction list file
+- *.vhd : virtual hard disk file
+- bochsrc.txt ： bochs virtual machine configuration file
+- *.s : Posix x86 assembly language file
+- *.asm : Windows x86 assembly language file
+- *.bin : binary object file
+- *.lst : nasm instruction list file
+- *.list : nasm instruction list file
